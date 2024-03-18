@@ -2,7 +2,7 @@
 
 # Variables
 BINARY_NAME=squid
-CMD_DIR=./cmd
+SOURCE_DIR=./
 BUILD_DIR=./bin
 
 # Ensure the build directory exists
@@ -12,12 +12,12 @@ $(shell mkdir -p $(BUILD_DIR))
 build:
 	rm -rf ./bin
 	@echo "Building..."
-	go build -o $(BUILD_DIR)/$(BINARY_NAME) $(CMD_DIR)
+	go build -o $(BUILD_DIR)/$(BINARY_NAME) $(SOURCE_DIR)
 
 # Run the program
 run: build
 	@echo "Running..."
-	./$(BUILD_DIR)/$(BINARY_NAME)
+	$(BUILD_DIR)/$(BINARY_NAME)
 
 # Clean up build artifacts
 clean:
