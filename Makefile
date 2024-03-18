@@ -1,5 +1,7 @@
+.PHONY: build run clean
+
 # Variables
-BINARY_NAME=cephalopod
+BINARY_NAME=squid
 CMD_DIR=./cmd
 BUILD_DIR=./bin
 
@@ -8,6 +10,7 @@ $(shell mkdir -p $(BUILD_DIR))
 
 # Build the binary
 build:
+	rm -rf ./bin
 	@echo "Building..."
 	go build -o $(BUILD_DIR)/$(BINARY_NAME) $(CMD_DIR)
 
@@ -21,5 +24,3 @@ clean:
 	@echo "Cleaning up..."
 	go clean
 	rm -rf $(BUILD_DIR)
-
-.PHONY: build run clean
