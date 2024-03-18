@@ -14,16 +14,16 @@ build:
 	@echo "Building..."
 	go build -o $(BUILD_DIR)/$(BINARY_NAME) $(SOURCE_DIR)
 
-# Run the program
-run: build
-	@echo "Running..."
-	$(BUILD_DIR)/$(BINARY_NAME)
-
 # Clean up build artifacts
 clean:
 	@echo "Cleaning up..."
 	go clean
 	rm -rf $(BUILD_DIR)
+
+# Run the program
+run: build
+	@echo "Running..."
+	$(BUILD_DIR)/$(BINARY_NAME)
 
 run-tests:
 	@echo "Running tests..."

@@ -9,7 +9,9 @@ type UserInput struct {
 	Users          int    // Number of concurrent users to simulate
 }
 
-func GetUserInput() UserInput {
+type InputService struct{}
+
+func (i *InputService) GetUserInput() UserInput {
 	var (
 		endpoint      string
 		executionTime int
