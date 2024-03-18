@@ -8,7 +8,9 @@ It will offer up metadata about the health of your API once it's finished.
 
 - [Getting Started](#getting-started)
 - [Unit Testing](#unit-testing)
+- [Project Management](#project-management)
 - [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 
@@ -33,6 +35,10 @@ Note that `make run` will prompt you to input a variety of data, including:
 ## Unit Testing
 
 TODO
+
+## Project Management
+
+You can find a list of planned changes (past, present, future) on [this Trello board](https://trello.com/invite/b/2WRhAcKG/ATTI423f67efa34216844f95691652bb1d406B165047/load-testing-server).
 
 ## Contributing
 
