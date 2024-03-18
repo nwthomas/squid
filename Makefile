@@ -1,4 +1,4 @@
-.PHONY: build run clean
+.PHONY: build run clean run-tests
 
 # Variables
 BINARY_NAME=squid
@@ -24,3 +24,7 @@ clean:
 	@echo "Cleaning up..."
 	go clean
 	rm -rf $(BUILD_DIR)
+
+run-tests:
+	@echo "Running tests..."
+	go test -v ./...

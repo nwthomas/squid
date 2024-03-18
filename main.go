@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	input "github.com/nwthomas/squid/cmd"
+	input "github.com/nwthomas/squid/cmd/input"
 )
 
 func main() {
