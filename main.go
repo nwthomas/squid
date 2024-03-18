@@ -17,6 +17,6 @@ func main() {
 		UserInput: userInput,
 	}
 
-	loadtestingService.Test()
-	loadtestingService.Results()
+	loadtestingService.RunTest()
+	loadtestingService.GetResults()
 }

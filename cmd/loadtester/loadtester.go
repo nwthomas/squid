@@ -1,6 +1,8 @@
 package loadtester
 
 import (
+	"fmt"
+
 	"github.com/nwthomas/squid/cmd/analytics"
 	"github.com/nwthomas/squid/cmd/input"
 )
@@ -17,10 +19,11 @@ func (l *LoadTestingService) GetRampUserIncrementsS() int {
 	return waitTime
 }
 
-func (l *LoadTestingService) Test() {
+func (l *LoadTestingService) RunTest() {
 	// finish
 }
 
-func (l *LoadTestingService) Results() {
+func (l *LoadTestingService) GetResults() {
+	fmt.Println(l.UserInput)
 	l.Analytics.Test()
 }

@@ -1,8 +1,8 @@
 # Squid 🦑
 
-A load-testing server written in Go meant to simulate concurrent users and requests per second while developing your applications.
+Squid is a load-testing server written in Go and meant to simulate concurrent users and requests per second while developing your applications.
 
-It will offer up metadata about the health of your API once it's finished.
+It will offer up data about the health of your API when it's finished running.
 
 ## Table of Contents
 
