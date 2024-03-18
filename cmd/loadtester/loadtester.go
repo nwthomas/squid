@@ -1,10 +1,12 @@
 package loadtester
 
 import (
+	"github.com/nwthomas/squid/cmd/analytics"
 	"github.com/nwthomas/squid/cmd/input"
 )
 
 type LoadTestingService struct {
+	Analytics analytics.AnalyticsService
 	UserInput input.UserInput
 }
 
@@ -20,5 +22,5 @@ func (l *LoadTestingService) Test() {
 }
 
 func (l *LoadTestingService) Results() {
-	// finish
+	l.Analytics.Test()
 }

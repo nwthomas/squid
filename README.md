@@ -31,6 +31,8 @@ Note that `make run` will prompt you to input a variety of data, including:
 
 - Endpoint to load test
 - Number of concurrent users to simulate
+- Length of time in seconds to ramp to maximum concurrent users
+- Length of time in seconds to run the load test
 
 ## Unit Testing
 

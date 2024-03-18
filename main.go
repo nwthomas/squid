@@ -1,16 +1,19 @@
 package main
 
 import (
+	"github.com/nwthomas/squid/cmd/analytics"
 	"github.com/nwthomas/squid/cmd/input"
 	"github.com/nwthomas/squid/cmd/loadtester"
 )
 
 func main() {
+	analyticsSerice := analytics.AnalyticsService{}
 	inputService := input.InputService{}
 
 	userInput := inputService.GetUserInput()
 
 	loadtestingService := loadtester.LoadTestingService{
+		Analytics: analyticsSerice,
 		UserInput: userInput,
 	}
 
