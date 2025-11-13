@@ -17,6 +17,7 @@ make lint
 ```bash
 # Run all tests
 make test
+
 # Run a single test by name
 make test RUN=TestName
 ```

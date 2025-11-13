@@ -1,0 +1,30 @@
+run:
+  issues-exit-code: 1
+linters-settings:
+  misspell:
+    locale: US
+linters:
+  enable-all: false
+  enable:
+    - errcheck
+    - staticcheck
+    - unused
+    #- gosimple
+    - govet
+    - goimports
+    - gocritic
+    - gocyclo
+    - gofmt
+    - gosec
+    - ineffassign
+    - prealloc
+issues:
+  exclude-use-default: false
+exclude-rules:
+  - path: _test.go
+    text: "should be considered"
+    linters:
+      - errcheck
+  - linters:
+      - testpackage
+    text: "error for package"
